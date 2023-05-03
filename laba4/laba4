@@ -1,0 +1,20 @@
+#dhcp
+domain=Morozik.com
+interface=enp0s3
+dhcp-range=192.168.1.21, 192.168.1.100, 24h
+#
+dhcp-host=08:00:27:81:9E:5C, 192.168.1.10
+dhcp-option=2, 255.255.255.0
+dhcp-option=3, 192.168.1.20
+#
+#dns
+domain=Morozik.local
+domain=fin.Morozik.local, 192.168.1.20/24
+server=/remoteoffice.org/192.168.3.10
+server=/3.168.192.in-addr.arpa/192.168.3.1
+#
+address=/Morozik.local/192.168.1.20
+server=8.8.8.8
+server=8.8.4.4
+server=208.67.222.222
+server=208.67.220.220
